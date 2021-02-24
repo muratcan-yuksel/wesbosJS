@@ -9,7 +9,8 @@ const setDate= function () {
     console.log(seconds);
     //we need degrees
     const secondsDegrees= ((seconds/60) *360) + 90;
-    secondHand.style.transform=`rotate (${secondsDegrees}deg)`
+    secondHand.style.transform=`rotate(${secondsDegrees}deg)`;
+
 }
 
 setInterval(setDate, 1000);
