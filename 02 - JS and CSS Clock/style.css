@@ -43,4 +43,9 @@ html {
     background: black;
     position: absolute;
     top: 50%;
+    transform-origin:100%;
+    /* the lines do not point to 12h, in order to do that, we do the following*/
+    transform:rotate(90deg);
+    transition:all 0.05s;
+    transition-timing-function: cubic-bezier(0, 1.67, 0.58, 1);
   }
